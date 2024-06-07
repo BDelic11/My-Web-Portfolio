@@ -1,5 +1,6 @@
-import "../globals.css";
-import { Inter } from "next/font/google";
+import "./globals.css";
+// import { Inter } from "next/font/google";
+import { Readex_Pro } from "next/font/google";
 
 // INTERNATIONALIZATION
 import { NextIntlClientProvider } from "next-intl";
@@ -7,10 +8,11 @@ import { getMessages } from "next-intl/server";
 
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
-import LanguageChanger from "../components/LanguageChanger";
-const Header = dynamic(() => import("../components/Header"), { ssr: false });
+import LanguageChanger from "@/components/LanguageChanger";
+const Header = dynamic(() => import("@/components/Header"), { ssr: false });
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const readex = Readex_Pro({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -32,7 +34,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body className={readex.className}>
         <NextIntlClientProvider messages={messages}>
           <Header />
           <LanguageChanger locale={locale} />

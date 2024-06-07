@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import { ChangeEvent } from "react";
+import { ChangeEvent, useState } from "react";
 
 //ICONS
 import croFlag from "@/public/icons/croFlag.png";

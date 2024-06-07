@@ -1,10 +1,9 @@
-import { useTranslations } from "next-intl";
+import HeroSection from "@/components/LandingPageSections/HeroSection";
 
 export default function Home() {
-  const t = useTranslations("landing");
   return (
-    <main className="min-h-screen flex flex-col items-center">
-      <h1 className=" text-white">{t("LargeH1")}</h1>
+    <main className="min-h-screen flex flex-col items-center  ">
+      <HeroSection />
     </main>
   );
 }

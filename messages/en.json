@@ -1,6 +1,10 @@
 {
   "landing": {
-    "LargeH1": "Hello"
+    "LargeH1-first-part": "Empowering",
+    "LargeH1-sec-part": "Your Ideas",
+    "LargeH1-third-part": "with Innovative",
+    "LargeH1-forth-part": "Code",
+    "Cta": "Get Started"
   },
   "LocaleSwitcher": {
     "hr": "Croatian",

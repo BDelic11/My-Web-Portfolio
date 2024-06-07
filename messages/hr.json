@@ -1,6 +1,10 @@
 {
   "landing": {
-    "LargeH1": "Pozdrav"
+    "LargeH1-first-part": "Realiziramo  ",
+    "LargeH1-sec-part": "Vaše ideje",
+    "LargeH1-third-part": "sa inovativnim",
+    "LargeH1-forth-part": "Kodom",
+    "Cta": "Kreni Odmah"
   },
   "LocaleSwitcher": {
     "hr": "Hrvatski",

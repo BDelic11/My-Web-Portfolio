@@ -2,15 +2,15 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import useWindowSize from "../hooks/useWindowSize";
+import useWindowSize from "@/app/hooks/useWindowSize";
 
 // ICONS AND IMAGES
-import AevumLogo from "@/../../public/icons/small logo (1).svg";
-import AevumLogoLarge from "@/../../public/icons/large logo.svg";
+import AevumLogo from "@/../../public/icons/small-logo-new.svg";
+import AevumLogoLarge from "@/../../public/icons/large-logo.svg";
 import HamburgerIcon from "@/../../public/icons/hamburger menu.svg";
 import CloseIcon from "@/../../public/icons/cross.svg";
 
-import LayoutContainer from "./Container";
+import LayoutContainer from "./ui/Container";
 import Navbar from "./Navbar";
 
 const Header = () => {
@@ -58,7 +58,7 @@ const Header = () => {
             </div>
 
             {isOpen && (
-              <Navbar className="flex flex-col align-middle justify-center " />
+              <Navbar className="absolute bg-dark-bg w-full h-1/2 -inset-x-0 flex flex-col align-middle justify-center " />
             )}
           </>
         ) : (
