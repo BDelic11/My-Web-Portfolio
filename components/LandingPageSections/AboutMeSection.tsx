@@ -53,7 +53,6 @@ const AboutMeSection = () => {
             <Button
               className="w-40 mb-20 text-off-white bg-aevum-orange text-sm md:text-xs "
               size="sm"
-              variant="secondary"
               asChild
             >
               <Link href="/about"> {t("landing-about-button")}</Link>

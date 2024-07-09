@@ -43,9 +43,8 @@ const HeroSection = () => {
               transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.7s",
             }}
             size="sm"
-            variant="secondary"
             asChild
-            className=" my-11 w-40 text-off-white bg-aevum-orange md:text-xs"
+            className=" my-11"
           >
             <ScrollLink
               to="projects"
