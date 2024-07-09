@@ -4,6 +4,8 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Image from "next/image";
 
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+
 //IMAGES
 import heroImage from "@/public/images/hero-image.svg";
 
@@ -41,9 +43,19 @@ const HeroSection = () => {
               transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.7s",
             }}
             size="sm"
-            className=" my-11 w-40 bg-aevum-orange md:text-xs"
+            variant="secondary"
+            asChild
+            className=" my-11 w-40 text-off-white bg-aevum-orange md:text-xs"
           >
-            {t("cta")}
+            <ScrollLink
+              to="projects"
+              smooth={true}
+              duration={500}
+              href="/about"
+            >
+              {" "}
+              {t("cta")}
+            </ScrollLink>
           </Button>
         </div>
 

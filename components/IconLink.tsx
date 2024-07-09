@@ -1,5 +1,3 @@
-import { StaticImageData } from "next/image";
-import Link from "next/link";
 import React from "react";
 
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
