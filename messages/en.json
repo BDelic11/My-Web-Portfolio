@@ -1,10 +1,33 @@
 {
   "landing": {
-    "LargeH1-first-part": "Empowering",
-    "LargeH1-sec-part": "Your Ideas",
-    "LargeH1-third-part": "with Innovative",
-    "LargeH1-forth-part": "Code",
-    "Cta": "Get Started"
+    "largeH1-first-part": "Web Development",
+    "largeH1-sec-part": "Hi there, I'm Bruno Delić and ",
+    "largeH1-third-part": "Welcome to my Portfolio",
+    "cta": "Explore Projects"
+  },
+  "about": {
+    "landing-about-title": "Not your classic programmer",
+    "landing-about-paragraph": "A little about me.",
+    "landing-about-paragraph-1": "I'm Bruno Delić ",
+    "landing-about-paragraph-2": "Finishing third year of Programming and Computer Science at Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture.",
+    "landing-about-button": "More about me"
+  },
+  "unique": {
+    "landing-unique-title-1": "Be Different",
+    "landing-unique-title-2": "Stand out",
+    "landing-unique-paragraph": "I single-handedly designed and created this web portfolio to showcase some basic skills while also avoiding the monotony of traditional resumes."
+  },
+  "projects": {
+    "landing-projects-title": "Projects",
+    "landing-projects-button": "See more"
+  },
+  "contact": {
+    "landing-contact-title": "Contact me"
+  },
+
+  "about-page": {
+    "about-firstSection-title": "More about me",
+    "about-firstSection-paragraph": "As a third-year computer science student at FESB, I am eager to expand my knowledge and gain new experiences. I believe it is the right time to challenge myself in a new environment with new challenges. I see working on larger projects in the professional world as the correct step on my path. As a long-time athlete, working in a team is not unfamiliar to me, and I bring my desire for competition and improvement into everything I do. Most of my projects have been completed independently of my studies, in my free time."
   },
   "LocaleSwitcher": {
     "hr": "Croatian",

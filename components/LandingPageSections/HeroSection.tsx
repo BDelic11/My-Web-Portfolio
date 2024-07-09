@@ -1,4 +1,7 @@
+"use client";
 import { useTranslations } from "next-intl";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 import Image from "next/image";
 
 //IMAGES
@@ -9,28 +12,50 @@ import { Button } from "../ui/button";
 
 const HeroSection = () => {
   const t = useTranslations("landing");
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <section className=" pt-20">
-      <LayoutContainer>
-        <h1 className="flex flex-col leading-14 gap-4 text-white font-extralight text-5xl  ">
-          <span>{t("LargeH1-first-part")}</span>
-          <span className=" font-semibold  text-aevum-blue">
-            {" "}
-            {t("LargeH1-sec-part")}
-          </span>{" "}
-          <span>{t("LargeH1-third-part")} </span>
-          <span className=" font-semibold">{t("LargeH1-forth-part")}</span>
-        </h1>
-        <Button className=" my-11 bg-aevum-orange">{t("Cta")}</Button>
+    <LayoutContainer>
+      <section id="hero" ref={ref} className=" pt-24 flex flex-col md:flex-row">
+        <div
+          className="flex flex-col"
+          style={{
+            transform: isInView ? "none" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          <h1 className="  gap-4 text-white font-extralight text-lg  md:text-sm  ">
+            <span className=" block mt-2 font-bold py-4 text-5xl ">
+              {" "}
+              {t(`largeH1-first-part`)}
+            </span>
+            <span className=" ">{t(`largeH1-sec-part`)}</span>
+            {t(`largeH1-third-part`)}
+          </h1>
+          <Button
+            style={{
+              transform: isInView ? "none" : "translateX(-200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.7s",
+            }}
+            size="sm"
+            className=" my-11 w-40 bg-aevum-orange md:text-xs"
+          >
+            {t("cta")}
+          </Button>
+        </div>
+
         <Image
           src={heroImage}
           alt="Hero section illustration"
           width={260}
           height={210}
-          className="absolute right-4"
+          className=" ml-auto "
         />
-      </LayoutContainer>
-    </section>
+      </section>
+    </LayoutContainer>
   );
 };
 

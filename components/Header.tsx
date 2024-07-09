@@ -1,31 +1,56 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useAnimate, useScroll } from "framer-motion";
 import useWindowSize from "@/app/hooks/useWindowSize";
 
-// ICONS AND IMAGES
+// Icons and images
 import AevumLogo from "@/../../public/icons/small-logo-new.svg";
 import AevumLogoLarge from "@/../../public/icons/large-logo.svg";
-import HamburgerIcon from "@/../../public/icons/hamburger menu.svg";
-import CloseIcon from "@/../../public/icons/cross.svg";
 
+// Components
 import LayoutContainer from "./ui/Container";
 import Navbar from "./Navbar";
+import { useMenuAnimation } from "@/app/hooks/useMenuAnimation";
+import { MenuToggle } from "./ui/MenutToggleButton";
 
 const Header = () => {
   const screenSize = useWindowSize();
+  const [isMenuOpen, setisMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const isMobile = screenSize.width <= 786;
 
-  const [isOpen, setIsOpen] = useState(false);
+  //Animation of navbar when burger clicked
+  const scope = useMenuAnimation(isMenuOpen);
+
+  //Navbar turns invisible when not on top
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleToggleHamburger = () => {
-    setIsOpen(!isOpen);
+    setisMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className=" bg-inherit shadow-md stroke-white py-3">
+    <header
+      ref={scope}
+      className={` ${
+        isScrolled && !isMenuOpen ? " opacity-50" : " opacity-100"
+      } fixed top-0 w-full bg-inherit shadow-md stroke-white py-3 transition-all duration-500 delay-150 z-10`}
+    >
       <LayoutContainer>
-        {screenSize.width <= 786 ? (
+        {isMobile ? (
           <>
             <div className="flex flex-row justify-between align-middle items-center">
               <Image
@@ -35,41 +60,28 @@ const Header = () => {
                 height={32}
                 priority
               />
-
-              {isOpen ? (
-                <Image
-                  src={CloseIcon}
-                  alt="Close icon"
-                  width={32}
-                  height={32}
-                  onClick={handleToggleHamburger}
-                  className="bg-white"
-                />
-              ) : (
-                <Image
-                  src={HamburgerIcon}
-                  alt="Hamburger icon"
-                  width={24}
-                  height={24}
-                  priority
-                  onClick={handleToggleHamburger}
-                />
-              )}
+              <MenuToggle toggle={handleToggleHamburger} />
             </div>
 
-            {isOpen && (
-              <Navbar className="absolute bg-dark-bg w-full h-1/2 -inset-x-0 flex flex-col align-middle justify-center " />
+            {isMenuOpen && (
+              <Navbar
+                setIsOpen={setisMenuOpen}
+                // className={` bg-dark-bg  -inset-x-0 flex flex-col align-middle justify-center  transition-all duration-500 delay-100`}
+              />
             )}
           </>
         ) : (
-          <Image
-            src={AevumLogoLarge}
-            alt="Large Aevum Logo"
-            width={165}
-            height={30}
-            className="m-auto lg:scale-110 "
-          />
-          //   <Navbar className="flex flex-row justify-between items-center" />
+          // <Image
+          //   src={logoTest1}
+          //   alt="Large Aevum Logo"
+          //   width={100}
+          //   height={40}
+          //   className="m-auto lg:scale-110 "
+          // />
+          <h2 className="m-auto text-xl text-off-white text-center font-thin">
+            <span className=" text-aevum-blue font-medium">CODE</span> with
+            BRUNO DELIĆ
+          </h2>
         )}
       </LayoutContainer>
     </header>

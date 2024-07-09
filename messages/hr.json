@@ -1,11 +1,34 @@
 {
   "landing": {
-    "LargeH1-first-part": "Realiziramo  ",
-    "LargeH1-sec-part": "Vaše ideje",
-    "LargeH1-third-part": "sa inovativnim",
-    "LargeH1-forth-part": "Kodom",
-    "Cta": "Kreni Odmah"
+    "largeH1-first-part": "Web Development",
+    "largeH1-sec-part": "Bok, Ja sam Bruno Delić i ",
+    "largeH1-third-part": "Dobrodošli na moj Portfolio",
+    "cta": "Istraži projekte"
   },
+  "about": {
+    "landing-about-title": "Ne baš klasični programer",
+    "landing-about-paragraph": "Malo o meni.",
+    "landing-about-paragraph-1": "Moje ime je Bruno Delić",
+    "landing-about-paragraph-2": "Završavam treću godinu Računarstva na FESB-u.",
+    "landing-about-button": "Više o meni"
+  },
+  "unique": {
+    "landing-unique-title-1": "Budi drugačiji",
+    "landing-unique-title-2": "Istakni se",
+    "landing-unique-paragraph": "Samostalno sam dizajnirao i napravio ovaj web portfolio da mogu pokazati neke osnovne vještine, ali ujedno i izbjeći monotonost klasičnih životopisa."
+  },
+  "projects": {
+    "landing-projects-title": "Projekti",
+    "landing-projects-button": "Vidi sve"
+  },
+  "contact": {
+    "landing-contact-title": "Kontaktiraj me"
+  },
+  "about-page": {
+    "about-firstSection-title": "Malo više o meni",
+    "about-firstSection-paragraph": "Kao student treće godine računarstva na FESB-u, željan sam širenja znanja i stjecanja novog iskustva, te smatram da je pravo vrijeme da se okušam u novoj okolini s novim izazovima. Rad na većim projektima u profesionalnom svijetu vidim kao ispravan korak na svom putu. Kao dugogodišnjem sportašu, rad u timu mi nije stran, a želju za natjecanjem i poboljšanjem prenosim u sve što radim. Većinu svojih projekata realizirao sam neovisno o fakultetu, u slobodno vrijeme."
+  },
+
   "LocaleSwitcher": {
     "hr": "Hrvatski",
     "en": "Engleski"

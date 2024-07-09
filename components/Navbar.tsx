@@ -4,24 +4,31 @@ const navbarIcons = [
   {
     id: 0,
     title: "Home",
-    linkTo: "/",
+    linkTo: "hero",
     icon: undefined,
   },
-  { id: 1, title: "What we offer", linkTo: "", icon: undefined },
-  { id: 2, title: "Why choose us", linkTo: "", icon: undefined },
-  { id: 3, title: "Who are we", linkTo: "", icon: undefined },
+  { id: 1, title: "Stand out", linkTo: "unique", icon: undefined },
+  { id: 2, title: "About me", linkTo: "about", icon: undefined },
+  { id: 3, title: "Projects", linkTo: "projects", icon: undefined },
 ];
 
-interface Navbar {
+interface NavbarProps {
   className?: string;
+  setIsOpen: (bool: boolean) => void;
 }
 
-const Navbar: React.FC<Navbar> = ({ className }) => {
+const Navbar: React.FC<NavbarProps> = ({ setIsOpen, className }) => {
   return (
     <nav>
-      <ul className={`${className}`}>
+      <ul
+        className={`${className} flex flex-col justify-around py-10 align-middle `}
+      >
         {navbarIcons.map((navbarIcon) => (
-          <IconLink key={navbarIcon.id} {...navbarIcon} />
+          <IconLink
+            key={navbarIcon.id}
+            setLinkClick={setIsOpen}
+            {...navbarIcon}
+          />
         ))}
       </ul>
     </nav>

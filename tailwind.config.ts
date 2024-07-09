@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        "off-white": "#F8F4E3",
         "dark-bg": "#464646",
         "aevum-blue": "#628DCF",
         "aevum-orange": "#D98538",
