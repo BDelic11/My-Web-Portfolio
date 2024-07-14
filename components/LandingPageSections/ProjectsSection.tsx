@@ -3,12 +3,9 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
 import { Pagination, Navigation } from "swiper/modules";
 
-//Images
-import firstImage from "@/public/images/1.jpg";
-import secImage from "@/public/images/2.jpg";
+import { projects } from "@/project-info/projects";
 
 //Components
 import LayoutContainer from "../ui/Container";
@@ -27,22 +24,8 @@ const ProjectsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const projects = [
-    {
-      id: 1,
-      image: firstImage,
-      title: "Stylist",
-    },
-    { id: 2, image: secImage, title: "Web shop" },
-    { id: 3, image: secImage, title: "Nesto trece" },
-  ];
-
   return (
-    <section
-      id="projects"
-      ref={ref}
-      className=" h-full md:h-full bg-dark-bg mt-20"
-    >
+    <section id="projects" ref={ref} className=" h-full  bg-dark-bg mt-20">
       <LayoutContainer>
         <TitleComponent isInView={isInView} classname=" text-off-white">
           {t(`landing-projects-title`)}
@@ -73,7 +56,7 @@ const ProjectsSection = () => {
               <ProjectCard
                 title={project.title}
                 id={project.id}
-                image={project.image}
+                image={project.images[0]}
               />
             </SwiperSlide>
           ))}
@@ -82,8 +65,12 @@ const ProjectsSection = () => {
           className=" bg-inherit text-off-white my-20"
           variant="outline"
           size="sm"
+          asChild
         >
-          {t(`landing-projects-button`)}
+          <a rel="noopener noreferrer" href="https://github.com/BDelic11">
+            {t(`landing-projects-button`)}
+            {/* <p className="m-auto text-sm">{icon.title}</p> */}
+          </a>
         </Button>
       </LayoutContainer>
     </section>

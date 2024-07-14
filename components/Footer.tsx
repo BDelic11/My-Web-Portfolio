@@ -37,7 +37,7 @@ const icons = [
     id: 4,
     image: instaIcon,
     title: "Instagram",
-    link: "",
+    link: "https://www.instagram.com/brunodelic8/",
   },
 ];
 
@@ -85,7 +85,7 @@ const Footer = () => {
               <Image
                 src={icon.image}
                 alt={`icon number ${icon.id}`}
-                className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 m-auto"
+                className="w-8 h-8  lg:w-10 lg:h-10 m-auto hover:scale-110 transition-all duration-300 delay-75"
               />
               {/* <p className="m-auto text-sm">{icon.title}</p> */}
             </a>

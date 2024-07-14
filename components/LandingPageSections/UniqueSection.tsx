@@ -18,7 +18,7 @@ const UniqueSection = () => {
     <section
       id="unique"
       ref={ref1}
-      className={`flex flex-col h-[120vh] mt-40 md:h-[150vh] ${
+      className={`flex flex-col h-[120vh] mt-40 lg:h-[150vh]  ${
         isInViewText ? " bg-white" : " bg-dark-bg"
       } transition-all duration-1000 delay-75 `}
     >
