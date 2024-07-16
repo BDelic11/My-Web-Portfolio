@@ -5,7 +5,7 @@ export function useMenuAnimation(isOpen: boolean) {
   const [scope, animate] = useAnimate();
 
   useEffect(() => {
-    const menuAnimations = isOpen
+    const menuAnimations: any[] = isOpen
       ? [
           [
             "header",
