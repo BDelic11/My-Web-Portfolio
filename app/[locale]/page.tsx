@@ -7,10 +7,10 @@ import UniqueSection from "@/components/LandingPageSections/UniqueSection";
 export default function Home({ params: { locale } }: any) {
   return (
     <main className="min-h-screen flex flex-col  ">
-      <HeroSection locale={locale} />
-      <UniqueSection locale={locale} />
-      <AboutMeSection locale={locale} />
-      <ProjectsSection locale={locale} />
+      <HeroSection />
+      <UniqueSection />
+      <AboutMeSection />
+      <ProjectsSection />
     </main>
   );
 }

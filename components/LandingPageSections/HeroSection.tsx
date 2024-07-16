@@ -3,7 +3,6 @@ import { useTranslations } from "next-intl";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Image from "next/image";
-import { unstable_setRequestLocale } from "next-intl/server";
 
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
@@ -14,8 +13,7 @@ import heroImage from "@/public/images/hero-image.svg";
 import LayoutContainer from "@/components/ui/Container";
 import { Button } from "../ui/button";
 
-const HeroSection = ({ locale }: any) => {
-  unstable_setRequestLocale(locale);
+const HeroSection = () => {
   const t = useTranslations("landing");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

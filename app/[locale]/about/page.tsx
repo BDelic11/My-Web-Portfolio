@@ -1,16 +1,12 @@
-import { unstable_setRequestLocale } from "next-intl/server";
-
 //Components
 import FirstSection from "@/components/AboutPageSections/FirstSection";
 import WhyChoseMeSection from "@/components/AboutPageSections/WhyChoseMeSection";
 
-export default function About({ params: { locale } }: any) {
-  unstable_setRequestLocale(locale);
+export default function About() {
   return (
     <main className="min-h-screen flex flex-col  ">
-      <p>Hello</p>
-      {/* <FirstSection />
-      <WhyChoseMeSection /> */}
+      <FirstSection />
+      <WhyChoseMeSection />
     </main>
   );
 }

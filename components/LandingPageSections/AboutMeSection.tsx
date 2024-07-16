@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -12,10 +11,8 @@ import LayoutContainer from "../ui/Container";
 // import ProfileImage from "@/public/images/Slika za zivotopis.jpg";
 import { Button, buttonVariants } from "../ui/button";
 import Link from "next/link";
-import { unstable_setRequestLocale } from "next-intl/server";
 
-const AboutMeSection = ({ locale }: any) => {
-  unstable_setRequestLocale(locale);
+const AboutMeSection = () => {
   const t = useTranslations("about");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
