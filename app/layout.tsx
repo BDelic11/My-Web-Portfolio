@@ -7,6 +7,7 @@ import { Montserrat_Alternates } from "next/font/google";
 // INTERNATIONALIZATION
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
@@ -35,6 +36,7 @@ export default async function RootLayout({
   params: { locale: string };
 }>) {
   const messages = await getMessages();
+  unstable_setRequestLocale(locale);
 
   return (
     <html lang={locale}>
