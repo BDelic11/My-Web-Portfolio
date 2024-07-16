@@ -8,14 +8,13 @@ const ProjectPage = ({ params }: { params: { id: number } }) => {
 
   return (
     <main className="min-h-screen flex flex-col">
-      <p>hello</p>
-      {/* <ImageSectaion images={projects[id].images} />
+      <ImageSection images={projects[id].images} />
       <FirstSection
         title={projects[id].title}
         about={projects[id].about}
         technologies={projects[id].technologies}
         github={projects[id].github}
-      /> */}
+      />
     </main>
   );
 };
