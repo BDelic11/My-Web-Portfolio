@@ -25,9 +25,12 @@ const ProjectsSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section id="projects" ref={ref} className=" h-full  bg-dark-bg mt-20">
+    <section id="projects" ref={ref} className=" h-full  bg-dark-bg ">
       <LayoutContainer>
-        <TitleComponent isInView={isInView} classname=" text-off-white">
+        <TitleComponent
+          isInView={isInView}
+          classname=" text-off-white md:my-20"
+        >
           {t(`landing-projects-title`)}
         </TitleComponent>
         <Swiper

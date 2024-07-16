@@ -17,7 +17,7 @@ const TitleComponent: React.FC<TitleProps> = ({
         isInView
           ? "transform-none opacity-1"
           : " transform translate-x-[-200px] opacity-0"
-      }  transition-all duration-700 delay-500 text-5xl mb-20 md:text-4xl md:my-6 md:pt-10  `}
+      }  transition-all duration-700 delay-500 text-5xl mb-20 md:text-6xl lg:text-7xl md:my-6 md:pt-10  `}
     >
       {children}
     </h1>

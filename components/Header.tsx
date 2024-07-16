@@ -47,7 +47,7 @@ const Header = () => {
       ref={scope}
       className={` ${
         isScrolled && !isMenuOpen ? " opacity-50" : " opacity-100"
-      } fixed top-0 w-full bg-inherit shadow-md stroke-white py-3 transition-all duration-500 delay-150 z-10`}
+      } fixed top-0  w-full bg-inherit shadow-md stroke-white py-3 transition-all duration-500 delay-150 z-10`}
     >
       <LayoutContainer>
         {isMobile ? (
@@ -63,12 +63,7 @@ const Header = () => {
               <MenuToggle toggle={handleToggleHamburger} />
             </div>
 
-            {isMenuOpen && (
-              <Navbar
-                setIsOpen={setisMenuOpen}
-                // className={` bg-dark-bg  -inset-x-0 flex flex-col align-middle justify-center  transition-all duration-500 delay-100`}
-              />
-            )}
+            {isMenuOpen && <Navbar setIsOpen={setisMenuOpen} />}
           </>
         ) : (
           // <Image
@@ -78,10 +73,12 @@ const Header = () => {
           //   height={40}
           //   className="m-auto lg:scale-110 "
           // />
-          <h2 className="m-auto text-xl text-off-white text-center font-thin">
-            <span className=" text-aevum-blue font-medium">CODE</span> with
-            BRUNO DELIĆ
-          </h2>
+          <div className="flex justify-center  md:h-10 align-middle m-auto w-full">
+            <h2 className="m-auto w-full text-xl md:text-2xl text-off-white text-center font-thin">
+              <span className=" text-aevum-blue font-medium">CODE</span> with
+              BRUNO DELIĆ
+            </h2>
+          </div>
         )}
       </LayoutContainer>
     </header>

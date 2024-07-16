@@ -4,7 +4,7 @@ import HeroSection from "@/components/LandingPageSections/HeroSection";
 import ProjectsSection from "@/components/LandingPageSections/ProjectsSection";
 import UniqueSection from "@/components/LandingPageSections/UniqueSection";
 
-export default function Home({ params: { locale } }: any) {
+export default function Home() {
   return (
     <main className="min-h-screen flex flex-col  ">
       <HeroSection />

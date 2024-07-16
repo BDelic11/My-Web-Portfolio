@@ -1,6 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
-import { useRef } from "react";
+import { lazy, useRef } from "react";
 import { useInView } from "framer-motion";
 import Image from "next/image";
 
@@ -23,7 +23,7 @@ const HeroSection = () => {
       <section
         id="hero"
         ref={ref}
-        className=" h-screen pt-24 flex flex-col md:flex-row"
+        className=" h-screen pt-24 md:mt-16 md:pt-24 flex flex-col md:flex-row"
       >
         <div
           className="flex flex-col"
@@ -33,14 +33,15 @@ const HeroSection = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <h1 className="  gap-4 text-white font-extralight text-lg  md:text-sm  ">
-            <span className=" block mt-2 font-bold py-4 text-5xl ">
+          <h1 className="  gap-4 text-white font-extralight text-lg  md:text-xl  ">
+            <span className=" block mt-2 font-bold py-4 text-5xl md:text-6xl ">
               {" "}
               {t(`largeH1-first-part`)}
             </span>
-            <span className=" ">{t(`largeH1-sec-part`)}</span>
+            <span className=" ">{t(`largeH1-sec-part`)} </span>
             {t(`largeH1-third-part`)}
           </h1>
+
           <Button
             style={{
               transform: isInView ? "none" : "translateX(-200px)",
@@ -49,7 +50,7 @@ const HeroSection = () => {
             }}
             size="sm"
             asChild
-            className=" my-11"
+            className="md:w-48 md:h-12 my-11 md:text-lg md:font-medium"
           >
             <ScrollLink
               to="projects"
@@ -64,11 +65,12 @@ const HeroSection = () => {
         </div>
 
         <Image
+          loading="lazy"
           src={heroImage}
           alt="Hero section illustration"
           width={260}
           height={210}
-          className=" ml-auto "
+          className=" ml-auto md:w-[280px] md:h-[220px] lg:w-[300px] lg:h-[242px] md:mt-40 md:m-auto"
         />
       </section>
     </LayoutContainer>

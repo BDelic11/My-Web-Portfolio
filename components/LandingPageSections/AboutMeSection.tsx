@@ -9,7 +9,7 @@ import LayoutContainer from "../ui/Container";
 
 //Images
 // import ProfileImage from "@/public/images/Slika za zivotopis.jpg";
-import { Button, buttonVariants } from "../ui/button";
+import { Button } from "../ui/button";
 import Link from "next/link";
 
 const AboutMeSection = () => {
@@ -22,7 +22,7 @@ const AboutMeSection = () => {
       <section id="about" ref={ref}>
         <TitleComponent
           isInView={isInView}
-          classname=" text-off-white mt-40  md:pt-20 "
+          classname=" text-off-white mt-40 md:my-20 "
         >
           <span className=" text-aevum-orange">(Ne)</span> klasičan programer
         </TitleComponent>
@@ -40,16 +40,16 @@ const AboutMeSection = () => {
             className="mx-auto rounded-full w-60 h-60 object-cover"
           /> */}
           <div className=" ">
-            <div className="mx-auto rounded-full w-60 h-60 object-cover bg-white my-10"></div>
+            <div className="mx-auto rounded-full w-60 h-60 md:w-80 md:h-80 object-cover bg-white my-10"></div>
           </div>
-          <div className="flex flex-col  md:pl-20 md:justify-center md:align-top">
-            <div className="text-off-white font-light my-10 texl-lg md:text-xs leading-5 tracking-wide ">
+          <div className="flex flex-col  md:pl-20 md:justify-center md:align-top ">
+            <div className="text-off-white font-light my-10 texl-lg md:text-lg leading-5 tracking-wide ">
               <p className="">{t("landing-about-paragraph-1")}</p>
               <p className="">{t("landing-about-paragraph-2")}</p>
             </div>
 
             <Button
-              className="w-40 mb-20 text-off-white bg-aevum-orange text-sm md:text-xs "
+              className="w-40 mb-20 text-off-white bg-aevum-orange text-sm md:w-48 md:h-12 md:my-11 md:text-lg md:font-medium"
               size="sm"
               asChild
             >
