@@ -14,8 +14,8 @@ const ProjectPage = ({ params }: { params: { id: number } }) => {
         title={projects[id].title}
         about={projects[id].about}
         technologies={projects[id].technologies}
-        github={projects[id].github} */}
-      />
+        github={projects[id].github}
+      /> */}
     </main>
   );
 };
