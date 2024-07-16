@@ -55,7 +55,7 @@ const WhyChoseMeSection = () => {
         </p>
         <div className=" flex flex-col gap-20 md:flex-row justify-center align-middle my-20">
           {icons.map((icon) => (
-            <WhyMeIcon {...icon} />
+            <WhyMeIcon key={icon.id} {...icon} />
           ))}
         </div>
       </LayoutContainer>

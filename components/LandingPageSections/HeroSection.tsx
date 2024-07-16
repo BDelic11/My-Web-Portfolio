@@ -19,7 +19,11 @@ const HeroSection = () => {
 
   return (
     <LayoutContainer>
-      <section id="hero" ref={ref} className=" pt-24 flex flex-col md:flex-row">
+      <section
+        id="hero"
+        ref={ref}
+        className=" h-screen pt-24 flex flex-col md:flex-row"
+      >
         <div
           className="flex flex-col"
           style={{

@@ -34,7 +34,9 @@ const FirstSection = ({
   return (
     <section ref={ref} className="text-dark-bg h-full bg-off-white">
       <LayoutContainer>
-        <TitleComponent isInView={isInView}>{title}</TitleComponent>
+        <TitleComponent isInView={isInView} classname=" mt-6">
+          {title}
+        </TitleComponent>
         {github && (
           <p className=" text-xs mb-10">
             Github:{" "}
@@ -48,7 +50,7 @@ const FirstSection = ({
           <SmallTitle isInView={isInView} classname="text-bg-white ">
             About project
           </SmallTitle>
-          <p className=" text-xs font-light ">{about}</p>
+          <p className=" text-sm md:text-xs font-light ">{about}</p>
         </div>
         <div className=" flex flex-col pt-6">
           <SmallTitle isInView={isInView} classname="text-dark-bg mt-10 ">

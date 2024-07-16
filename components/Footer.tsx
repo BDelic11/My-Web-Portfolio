@@ -4,15 +4,16 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useInView } from "framer-motion";
 
-//Components
-import TitleComponent from "./ui/TitleComponent";
-import LayoutContainer from "./ui/Container";
-
 //Icons
 import linkedInIcon from "@/public/icons/social-media-icons/linkedIn.svg";
 import mailIcon from "@/public/icons/social-media-icons/Gmail.svg";
 import instaIcon from "@/public/icons/social-media-icons/instagram.svg";
 import gitIcon from "@/public/icons/social-media-icons/github.svg";
+
+//Components
+import TitleComponent from "./ui/TitleComponent";
+import LayoutContainer from "./ui/Container";
+import DownloadButton from "./ui/DownloadButton";
 
 const icons = [
   {
@@ -50,12 +51,17 @@ const Footer = () => {
     <footer id="contact" ref={ref} className="h-full bg-off-white">
       <LayoutContainer>
         <div className="flex flex-col md:flex-row md:justify-between md:align-middle md:py-20">
-          <TitleComponent
-            classname="pt-20 md:pt-0 text-dark-bg"
-            isInView={isInView}
-          >
-            {t(`landing-contact-title`)}
-          </TitleComponent>
+          <div className=" flex flex-col mb-10">
+            <TitleComponent
+              classname="pt-20 md:pt-0 text-dark-bg"
+              isInView={isInView}
+            >
+              {t(`landing-contact-title`)}
+            </TitleComponent>
+            <DownloadButton downloadFile="/files/Bruno Delić CV.pdf">
+              Download CV document
+            </DownloadButton>
+          </div>
           <div className=" text-dark-bg text-sm md:text-xs md:flex md:flex-col md:justify-center md:align-middle">
             <h2 className="">Bruno Delić</h2>
             <a
