@@ -60,6 +60,7 @@ const FirstSection = ({
             {technologies.map((tech) => (
               <article key={tech.id} className=" my-2 flex flex-col gap-4">
                 <Image
+                  key={tech.id}
                   src={tech.image}
                   alt={`technology number ${tech.id}`}
                   className=" w-20 h-20 object-contain m-auto"
