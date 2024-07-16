@@ -15,7 +15,7 @@ import ContactButton from "@/components/ui/ContactButton";
 import Footer from "@/components/Footer";
 import notFound from "./not-found";
 // import LanguageChanger from "@/components/LanguageChanger";
-const Header = dynamic(() => import("@/components/Header"), { ssr: false });
+// const Header = dynamic(() => import("@/components/Header"), { ssr: false });
 
 // const inter = Inter({ subsets: ["latin"] });
 const readex = Readex_Pro({ subsets: ["latin"] });
