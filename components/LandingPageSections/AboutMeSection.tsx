@@ -11,10 +11,11 @@ import LayoutContainer from "../ui/Container";
 //Images
 // import ProfileImage from "@/public/images/Slika za zivotopis.jpg";
 import { Button, buttonVariants } from "../ui/button";
-import { Router } from "next/router";
 import Link from "next/link";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-const AboutMeSection = () => {
+const AboutMeSection = ({ locale }: any) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations("about");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

@@ -8,8 +8,9 @@ export default function About({ params: { locale } }: any) {
   unstable_setRequestLocale(locale);
   return (
     <main className="min-h-screen flex flex-col  ">
-      <FirstSection />
-      <WhyChoseMeSection />
+      <p>Hello</p>
+      {/* <FirstSection />
+      <WhyChoseMeSection /> */}
     </main>
   );
 }

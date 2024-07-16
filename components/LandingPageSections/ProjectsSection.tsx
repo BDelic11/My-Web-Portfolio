@@ -14,12 +14,14 @@ import TitleComponent from "../ui/TitleComponent";
 import { useInView } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "../ui/button";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 //Styles
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ locale }: any) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations("projects");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

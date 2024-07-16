@@ -1,13 +1,15 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import { useInView, useAnimate } from "framer-motion";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 //Components
 import TitleComponent from "../ui/TitleComponent";
 import LayoutContainer from "../ui/Container";
 import { useTranslations } from "next-intl";
 
-const UniqueSection = () => {
+const UniqueSection = ({ locale }: any) => {
+  unstable_setRequestLocale(locale);
   const t = useTranslations("unique");
   const ref1 = useRef(null);
   const ref2 = useRef(null);

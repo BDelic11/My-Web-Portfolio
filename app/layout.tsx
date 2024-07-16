@@ -5,7 +5,7 @@ import { Archivo_Black } from "next/font/google";
 import { Montserrat_Alternates } from "next/font/google";
 
 // INTERNATIONALIZATION
-import { NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider, useLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { unstable_setRequestLocale } from "next-intl/server";
 
@@ -13,6 +13,7 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import ContactButton from "@/components/ui/ContactButton";
 import Footer from "@/components/Footer";
+import notFound from "./not-found";
 // import LanguageChanger from "@/components/LanguageChanger";
 const Header = dynamic(() => import("@/components/Header"), { ssr: false });
 
