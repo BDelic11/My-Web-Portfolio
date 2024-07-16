@@ -20,14 +20,14 @@ const Header = dynamic(() => import("@/components/Header"), { ssr: false });
 // const inter = Inter({ subsets: ["latin"] });
 const readex = Readex_Pro({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: {
-    template: "%s -  Portfolio",
-    default: "Bruno Delić",
-  },
-  description:
-    "Explore Bruno Delić web development projects and his skills, including React, JavaScript, HTML, CSS, C#, C and many more.",
-};
+// export const metadata: Metadata = {
+//   title: {
+//     template: "%s -  Portfolio",
+//     default: "Bruno Delić",
+//   },
+//   description:
+//     "Explore Bruno Delić web development projects and his skills, including React, JavaScript, HTML, CSS, C#, C and many more.",
+// };
 
 export default async function RootLayout({
   children,
@@ -43,11 +43,11 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={` ${readex.className}`}>
         <NextIntlClientProvider messages={messages}>
-          <Header />
+          {/* <Header /> */}
           {/* <LanguageChanger locale={locale} /> */}
           {children}
-          <Footer />
-          <ContactButton />
+          {/* <Footer /> */}
+          {/* <ContactButton /> */}
         </NextIntlClientProvider>
       </body>
     </html>
