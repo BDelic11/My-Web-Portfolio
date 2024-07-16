@@ -1,5 +1,4 @@
 import { projects } from "@/project-info/projects";
-
 //Components
 import FirstSection from "@/components/ProjectPageSections/FirstSection";
 import ImageSection from "@/components/ProjectPageSections/ImageSection";
