@@ -58,7 +58,7 @@ const FirstSection = ({
           </SmallTitle>
           <div className="my-10 grid grid-cols-2 align-middle justify-center gap-2 md:gap-0 md:justify-between md:flex md:flex-row ">
             {technologies.map((tech) => (
-              <article className=" my-2 flex flex-col gap-4">
+              <article key={tech.id} className=" my-2 flex flex-col gap-4">
                 <Image
                   src={tech.image}
                   alt={`technology number ${tech.id}`}
