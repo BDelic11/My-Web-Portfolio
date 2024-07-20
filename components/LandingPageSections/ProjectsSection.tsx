@@ -29,10 +29,22 @@ const ProjectsSection = () => {
       <LayoutContainer>
         <TitleComponent
           isInView={isInView}
-          classname=" text-off-white md:my-20"
+          classname=" text-off-white md:my-40 md:pb-20"
         >
           {t(`landing-projects-title`)}
         </TitleComponent>
+        <div className="flex flex-col md:flex-row md:justify-between bg-aevum-blue p-10 my-10 md:p-10 md:my-20  rounded-lg">
+          <h3 className="text-off-white text-2xl ">
+            Neki live projekti na kojima sam sudjelovao:
+          </h3>
+          <Button variant="link" className="text-white">
+            Adriatic Yachting
+          </Button>
+          <Button variant="link" className="text-white">
+            Cro-cruise
+          </Button>
+        </div>
+
         <Swiper
           spaceBetween={20}
           slidesPerView={1}
@@ -49,7 +61,7 @@ const ProjectsSection = () => {
               spaceBetween: 40,
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 50,
             },
           }}
@@ -72,7 +84,6 @@ const ProjectsSection = () => {
         >
           <a rel="noopener noreferrer" href="https://github.com/BDelic11">
             {t(`landing-projects-button`)}
-            {/* <p className="m-auto text-sm">{icon.title}</p> */}
           </a>
         </Button>
       </LayoutContainer>

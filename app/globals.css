@@ -14,14 +14,14 @@
 .swiper-button-prev:after,
 .swiper-button-prev:before {
   padding-right: 2px;
-  color: #ffffff;
+  color: #e2c25c;
 }
 
 .swiper-button-next:before,
 .swiper-button-next:after {
   padding-right: 2px;
 
-  color: #ffffff;
+  color: #e2c25c;
 }
 
 @layer base {

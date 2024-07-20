@@ -73,7 +73,7 @@ const Header = () => {
           //   height={40}
           //   className="m-auto lg:scale-110 "
           // />
-          <div className="flex justify-center  md:h-10 align-middle m-auto w-full">
+          <div className="flex justify-center  md:h-16 align-middle m-auto w-full">
             <h2 className="m-auto w-full text-xl md:text-2xl text-off-white text-center font-thin">
               <span className=" text-aevum-blue font-medium">CODE</span> with
               BRUNO DELIĆ

@@ -53,16 +53,16 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row md:justify-between md:align-middle md:py-20">
           <div className=" flex flex-col mb-10">
             <TitleComponent
-              classname="pt-20 md:pt-0 text-dark-bg"
+              classname="pt-20 md:pt-0 text-dark-bg  md:text-5xl"
               isInView={isInView}
             >
               {t(`landing-contact-title`)}
             </TitleComponent>
-            <DownloadButton downloadFile="/files/Bruno Delić CV.pdf">
+            <DownloadButton downloadFile="/files/bruno-delic.pdf">
               Download CV document
             </DownloadButton>
           </div>
-          <div className=" text-dark-bg text-sm md:text-xs md:flex md:flex-col md:justify-center md:align-middle">
+          <div className=" text-dark-bg text-sm md:text-base md:flex md:flex-col md:justify-center md:align-middle">
             <h2 className="">Bruno Delić</h2>
             <a
               className="underline cursor-pointer hover:text-aevum-blue transition-all duration-200"
@@ -91,7 +91,7 @@ const Footer = () => {
               <Image
                 src={icon.image}
                 alt={`icon number ${icon.id}`}
-                className="w-8 h-8  lg:w-10 lg:h-10 m-auto hover:scale-110 transition-all duration-300 delay-75"
+                className="w-8 h-8  lg:w-10 lg:h-10 m-auto hover:scale-125 transition-all duration-300 delay-75"
               />
               {/* <p className="m-auto text-sm">{icon.title}</p> */}
             </a>

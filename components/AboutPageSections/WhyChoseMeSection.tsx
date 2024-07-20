@@ -48,7 +48,7 @@ const WhyChoseMeSection = () => {
         <TitleComponent isInView={isInView} classname=" text-dark-bg">
           <span className="text-aevum-blue">Why</span> choose me
         </TitleComponent>
-        <p className=" pb-10  text-center text-gray-500 ">
+        <p className="pb-10 text-gray-500 ">
           I believe that several unique skills set me apart from other
           developers. Here are some of the key strengths that I bring to the
           table

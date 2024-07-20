@@ -17,7 +17,7 @@ const SmallTitle: React.FC<SmallTitleProps> = ({
         isInView
           ? "transform-none opacity-1"
           : " transform translate-x-[-200px] opacity-0"
-      }  transition-all duration-700 delay-700 text-3xl mb-6 md:text-2xl md:my-6 md:pt-10  `}
+      }  transition-all duration-700 delay-700 text-3xl mb-6  md:my-6 md:pt-10  `}
     >
       {children}
     </h2>

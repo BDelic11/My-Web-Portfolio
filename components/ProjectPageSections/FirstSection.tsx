@@ -18,7 +18,8 @@ interface FirstSectionProps {
     image: StaticImageData;
     title: string;
   }[];
-  github: string;
+  github?: string;
+  link?: string;
 }
 
 const FirstSection = ({
@@ -26,6 +27,7 @@ const FirstSection = ({
   about,
   technologies,
   github,
+  link,
 }: FirstSectionProps) => {
   //   const t = useTranslations("projects");
   const ref = useRef(null);
@@ -38,11 +40,24 @@ const FirstSection = ({
           {title}
         </TitleComponent>
         {github && (
-          <p className=" text-xs mb-10">
+          <p className=" text-xs md:text-base mb-10">
             Github:{" "}
-            <span className=" underline text-aevum-blue text-xs">
+            <span className=" underline text-aevum-blue text-xs md:pl-1 md:text-base">
               {" "}
-              {github}
+              <a href={github} rel="noopener noreferrer">
+                {github}
+              </a>
+            </span>
+          </p>
+        )}
+        {link && (
+          <p className=" text-xs md:text-base mb-10">
+            Github:{" "}
+            <span className=" underline text-aevum-blue text-xs md:pl-1 md:text-base">
+              {" "}
+              <a href={link} rel="noopener noreferrer">
+                {link}
+              </a>
             </span>
           </p>
         )}
@@ -50,7 +65,7 @@ const FirstSection = ({
           <SmallTitle isInView={isInView} classname="text-bg-white ">
             About project
           </SmallTitle>
-          <p className=" text-sm md:text-xs font-light ">{about}</p>
+          <p className=" text-sm md:text-base font-light md:w-2/3 ">{about}</p>
         </div>
         <div className=" flex flex-col pt-6">
           <SmallTitle isInView={isInView} classname="text-dark-bg mt-10 ">

@@ -9,7 +9,7 @@ const DownloadButton = ({ downloadFile, children }: DownloadButtonProps) => {
   return (
     <a href={downloadFile} download>
       <Button
-        className=" bg-inherit md:text-xs"
+        className=" bg-inherit md:text-sm"
         variant="outline"
         size="default"
       >

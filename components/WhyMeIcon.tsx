@@ -12,7 +12,7 @@ const WhyMeIcon = ({ id, image, text }: WhyMeProps) => {
       <Image
         src={image}
         alt={`icon number ${id}`}
-        className="w-20 h-20 m-auto  "
+        className="w-20 h-20 m-auto "
       />
       <h2 className=" text-dark-bg text-center text-2xl">{text}</h2>
     </article>

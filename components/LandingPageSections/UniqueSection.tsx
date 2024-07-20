@@ -18,7 +18,7 @@ const UniqueSection = () => {
     <section
       id="unique"
       ref={ref1}
-      className={`flex flex-col h-[120vh] mt-40 md:h-[80vh] lg:h-[100vh]  ${
+      className={`flex flex-col h-[130vh] mt-40 md:h-[80vh] lg:h-[100vh]  ${
         isInViewText ? " bg-white" : " bg-dark-bg"
       } transition-all duration-1000 delay-75 `}
     >
@@ -52,10 +52,8 @@ const UniqueSection = () => {
               } transition-all duration-1000 delay-500 rounded-full w-6 h-6 ml-auto   `}
             ></div>
           </div>
-          <p className=" text-dark-bg my-20 md:w-1/2 md:text-lg ">
+          <p className=" text-dark-bg my-20  md:w-1/2 md:text-lg ">
             {t(`landing-unique-paragraph`)}
-            Samostalno sam sam dizajnirao i napravio sam ovaj portfolio pomoću
-            Next.js-a i Tailwinda.
           </p>
         </div>
       </LayoutContainer>

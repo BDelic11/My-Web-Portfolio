@@ -15,11 +15,11 @@ const ProjectCard = ({ id, title, image }: ProjectCardProps) => {
         <Image
           src={image}
           alt={`Project number ${id}`}
-          className="relative object-cover h-[320px] w-full m-auto rounded-xl shadow-gray-900 shadow-md"
+          className="relative object-cover object-left h-[320px] md:h-[360px] md:w-auto w-full m-auto rounded-xl shadow-gray-900 shadow-md hover:opacity-80 transition-all duration-300"
         />
       </Link>
       <div>
-        <h2 className=" text-off-white text-md pt-2">{title}</h2>
+        <h2 className=" text-off-white text-base md:text-lg  pt-2">{title}</h2>
         <h2 className="absolute bottom-0 right-0  text-4xl text-off-white font-semibold ">{`#00${
           id + 1
         }`}</h2>

@@ -18,13 +18,16 @@ const FirstSection = () => {
   return (
     <section className=" bg-off-white" ref={ref}>
       <LayoutContainer>
-        <TitleComponent isInView={isInView} classname="pt-24 text-dark-bg">
+        <TitleComponent
+          isInView={isInView}
+          classname="pt-24 md:pt-40 md:pb-10 md:w-2/3 text-dark-bg"
+        >
           {" "}
           More about me
         </TitleComponent>
         <p
           ref={ref}
-          className={`text-dark-bg mb-20 leading-relaxed tracking-normal ${
+          className={`text-dark-bg mb-20 md:mb-10 leading-relaxed tracking-normal ${
             isInView
               ? "transform-none opacity-1"
               : " transform translate-x-[-200px] opacity-0"

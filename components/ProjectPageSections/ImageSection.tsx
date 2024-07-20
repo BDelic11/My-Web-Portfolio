@@ -8,15 +8,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import ProjectCard from "../ProjectCard";
-
 interface ImageSectionProps {
   images: StaticImageData[];
 }
 
 const ImageSection = ({ images }: ImageSectionProps) => {
   return (
-    <section className=" pt-20 h-full">
+    <section className="pt-24 h-full w-full md:h-[500px] md:object-contain  md:px-20">
       <Swiper
         spaceBetween={5}
         slidesPerView={1}
@@ -30,11 +28,11 @@ const ImageSection = ({ images }: ImageSectionProps) => {
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 3,
-            spaceBetween: 50,
+            slidesPerView: 2,
+            spaceBetween: 10,
           },
         }}
       >
@@ -43,18 +41,11 @@ const ImageSection = ({ images }: ImageSectionProps) => {
             <Image
               src={image}
               alt="image"
-              className=" w-full h-full my-0 object-cover"
+              className=" w-auto h-full my-0 object-contain "
             />
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* {images.map((image) => (
-        <Image
-          src={image}
-          alt="image"
-          className=" w-40 h-40 my-0 object-cover"
-        />
-      ))} */}
     </section>
   );
 };

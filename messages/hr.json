@@ -6,16 +6,17 @@
     "cta": "Istraži projekte"
   },
   "about": {
-    "landing-about-title": "Ne baš klasični programer",
+    "landing-about-title-1": "Ne",
+    "landing-about-title-2": "baš klasični programer",
     "landing-about-paragraph": "Malo o meni.",
+    "landing-about-paragraph-2": "Moje ime je Bruno Delić i završavam treću godinu Računarstva na FESB-u.",
     "landing-about-paragraph-1": "Moje ime je Bruno Delić",
-    "landing-about-paragraph-2": "Završavam treću godinu Računarstva na FESB-u.",
     "landing-about-button": "Više o meni"
   },
   "unique": {
     "landing-unique-title-1": "Budi drugačiji",
     "landing-unique-title-2": "Istakni se",
-    "landing-unique-paragraph": "Samostalno sam dizajnirao i napravio ovaj web portfolio da mogu pokazati neke osnovne vještine, ali ujedno i izbjeći monotonost klasičnih životopisa."
+    "landing-unique-paragraph": "Samostalno sam dizajnirao i napravio ovaj web portfolio da mogu pokazati neke osnovne vještine, ali ujedno i izbjeći monotonost klasičnih životopisa. Za izradu ovog portfolia koristio sam Next.js u kombinaciji sa Tailwind-om, te dodatne stvari kao i18n internacionalizaciju, framer motion i GitHub."
   },
   "projects": {
     "landing-projects-title": "Projekti",
