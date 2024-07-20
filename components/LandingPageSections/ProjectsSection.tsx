@@ -33,7 +33,7 @@ const ProjectsSection = () => {
         >
           {t(`landing-projects-title`)}
         </TitleComponent>
-        <div className="flex flex-col md:flex-row md:justify-between bg-aevum-blue p-10 my-10 md:p-10 md:my-20  rounded-lg">
+        <div className="flex flex-col md:flex-row md:justify-between  bg-aevum-blue p-10 my-10 md:p-10 md:my-20  rounded-lg">
           <h3 className="text-off-white text-2xl ">
             Neki live projekti na kojima sam sudjelovao:
           </h3>
