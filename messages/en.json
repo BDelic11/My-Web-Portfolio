@@ -25,10 +25,21 @@
   "contact": {
     "landing-contact-title": "Get In Touch"
   },
+  "project-page": {
+    "about-project-title": "About project",
+    "about-tech-title": "Technologies"
+  },
 
   "about-page": {
     "about-firstSection-title": "More about me",
-    "about-firstSection-paragraph": "As a third-year computer science student at FESB, I am eager to expand my knowledge and gain new experiences. I believe it is the right time to challenge myself in a new environment with new challenges. I see working on larger projects in the professional world as the correct step on my path. As a long-time athlete, working in a team is not unfamiliar to me, and I bring my desire for competition and improvement into everything I do. Most of my projects have been completed independently of my studies, in my free time."
+    "about-firstSection-paragraph": "As a third-year computer science student at FESB, I am eager to expand my knowledge and gain new experiences. I believe it is the right time to challenge myself in a new environment with new challenges. I see working on larger projects in the professional world as the correct step on my path. As a long-time athlete, working in a team is not unfamiliar to me, and I bring my desire for competition and improvement into everything I do. Most of my projects have been completed independently of my studies, in my free time.",
+    "why-me-title-1": "Why",
+    "why-me-title-2": "choose me",
+    "why-me-text": "I believe that several unique skills set me apart from other developers. Here are some of the key strengths that I bring to the table.",
+    "icon-1": "Fast Learner",
+    "icon-2": "Team Player",
+    "icon-3": "Communicative",
+    "icon-4": "Quickly Adaptable"
   },
   "LocaleSwitcher": {
     "hr": "Croatian",

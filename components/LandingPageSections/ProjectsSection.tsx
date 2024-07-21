@@ -18,6 +18,7 @@ import { Button } from "../ui/button";
 //Styles
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Link from "next/link";
 
 const ProjectsSection = () => {
   const t = useTranslations("projects");
@@ -29,22 +30,38 @@ const ProjectsSection = () => {
       <LayoutContainer>
         <TitleComponent
           isInView={isInView}
-          classname=" text-off-white md:my-40 md:pb-20"
+          classname=" text-off-white md:my-40 md:pb-10"
         >
           {t(`landing-projects-title`)}
         </TitleComponent>
-        <div className="flex flex-col md:flex-row md:justify-between  bg-aevum-blue p-10 my-10 md:p-10 md:my-20  rounded-lg">
-          <h3 className="text-off-white text-2xl ">
+        <div className="flex flex-col md:flex-row md:justify-between  bg-white p-5 my-10 md:p-10 md:my-20  rounded-lg">
+          <h3 className="hidden md:block  text-2xl text-dark-bg">
             Neki live projekti na kojima sam sudjelovao:
           </h3>
-          <Button variant="link" className="text-white">
-            Adriatic Yachting
-          </Button>
-          <Button variant="link" className="text-white">
-            Cro-cruise
-          </Button>
+          <h3 className="block md:hidden text-2xl text-dark-bg">
+            Live projekti:
+          </h3>
+          <div className="flex flex-row mt-5 md:mt-0">
+            <Button asChild variant="link" className=" text-aevum-blue">
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.adriaticyachting.ch/"
+              >
+                Adriatic Yachting
+              </Link>
+            </Button>
+            <Button asChild variant="link" className=" text-aevum-blue">
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.crocruise.eu/"
+              >
+                Cro Cruise
+              </Link>
+            </Button>
+          </div>
         </div>
-
         <Swiper
           spaceBetween={20}
           slidesPerView={1}

@@ -9,7 +9,6 @@ import TitleComponent from "../ui/TitleComponent";
 import WhyMeIcon from "../WhyMeIcon";
 
 //Icons
-import bookIcon from "@/public/icons/why-choose-me-icons/book-dark.svg";
 import book from "@/public/icons/why-choose-me-icons/blue-book.svg";
 import groupIcon from "@/public/icons/why-choose-me-icons/group.svg";
 import communicationIcon from "@/public/icons/why-choose-me-icons/communication.svg";
@@ -46,13 +45,10 @@ const WhyChoseMeSection = () => {
     <section className="pt-24 bg-off-white" ref={ref}>
       <LayoutContainer>
         <TitleComponent isInView={isInView} classname=" text-dark-bg">
-          <span className="text-aevum-blue">Why</span> choose me
+          <span className="text-aevum-blue">{t(`why-me-title-1`)}</span>{" "}
+          {t(`why-me-title-2`)}
         </TitleComponent>
-        <p className="pb-10 text-gray-500 ">
-          I believe that several unique skills set me apart from other
-          developers. Here are some of the key strengths that I bring to the
-          table
-        </p>
+        <p className="pb-10 text-gray-500 ">{t(`why-me-text`)}</p>
         <div className=" flex flex-col gap-20 md:flex-row justify-center align-middle my-20">
           {icons.map((icon) => (
             <WhyMeIcon key={icon.id} {...icon} />

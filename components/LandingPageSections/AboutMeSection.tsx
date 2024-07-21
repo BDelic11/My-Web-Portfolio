@@ -46,7 +46,7 @@ const AboutMeSection = () => {
             <div className="mx-auto rounded-full w-60 h-60 md:w-80 md:h-80 object-cover bg-white my-10"></div>
           </div>
           <div className="flex flex-col  md:pl-40 md:justify-center md:align-top">
-            <div className="text-off-white font-light my-10 texl-lg md:text-base  ">
+            <div className="text-off-white font-light my-10 texl-lg md:text-lg  ">
               <p className="">{t("landing-about-paragraph-2")}</p>
               <p className="hidden md:block">
                 {t("landing-about-paragraph-1")}

@@ -29,7 +29,7 @@ const FirstSection = ({
   github,
   link,
 }: FirstSectionProps) => {
-  //   const t = useTranslations("projects");
+  const t = useTranslations("project-page");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -63,13 +63,13 @@ const FirstSection = ({
         )}
         <div>
           <SmallTitle isInView={isInView} classname="text-bg-white ">
-            About project
+            {t(`about-project-title`)}
           </SmallTitle>
           <p className=" text-sm md:text-base font-light md:w-2/3 ">{about}</p>
         </div>
         <div className=" flex flex-col pt-6">
           <SmallTitle isInView={isInView} classname="text-dark-bg mt-10 ">
-            Technologies
+            {t(`about-tech-title`)}
           </SmallTitle>
           <div className="my-10 grid grid-cols-2 align-middle justify-center gap-2 md:gap-0 md:justify-between md:flex md:flex-row ">
             {technologies.map((tech) => (

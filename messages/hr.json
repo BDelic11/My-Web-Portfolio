@@ -25,9 +25,21 @@
   "contact": {
     "landing-contact-title": "Kontaktiraj me"
   },
+  "project-page": {
+    "about-project-title": "O projektu",
+    "about-tech-title": "Tehnologije"
+  },
+
   "about-page": {
     "about-firstSection-title": "Malo više o meni",
-    "about-firstSection-paragraph": "Kao student treće godine računarstva na FESB-u, željan sam širenja znanja i stjecanja novog iskustva, te smatram da je pravo vrijeme da se okušam u novoj okolini s novim izazovima. Rad na većim projektima u profesionalnom svijetu vidim kao ispravan korak na svom putu. Kao dugogodišnjem sportašu, rad u timu mi nije stran, a želju za natjecanjem i poboljšanjem prenosim u sve što radim. Većinu svojih projekata realizirao sam neovisno o fakultetu, u slobodno vrijeme."
+    "about-firstSection-paragraph": "Kao student treće godine računarstva na FESB-u, željan sam širenja znanja i stjecanja novog iskustva, te smatram da je pravo vrijeme da se okušam u novoj okolini s novim izazovima. Rad na većim projektima u profesionalnom svijetu vidim kao ispravan korak na svom putu. Kao dugogodišnjem sportašu, rad u timu mi nije stran, a želju za natjecanjem i poboljšanjem prenosim u sve što radim. Većinu svojih projekata realizirao sam neovisno o fakultetu, u slobodno vrijeme.",
+    "why-me-title-1": "Zašto",
+    "why-me-title-2": "baš ja",
+    "why-me-text": "Vjerujem da me nekoliko jedinstvenih vještina izdvaja od ostalih developera. Evo nekih ključnih prednosti koje me razlikuju:",
+    "icon-1": "Brzo učenje",
+    "icon-2": "Timski igrač",
+    "icon-3": "Komunikativan",
+    "icon-4": "Brzo prilagodljiv"
   },
 
   "LocaleSwitcher": {
