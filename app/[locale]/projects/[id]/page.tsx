@@ -8,7 +8,11 @@ const ProjectPage = ({ params }: { params: { id: number } }) => {
 
   return (
     <main className="min-h-screen flex flex-col">
-      <ImageSection images={projects[id].images} />
+      {projects[id].images ? (
+        <ImageSection images={projects[id].images} />
+      ) : (
+        <p className=" bg-off-white md:pt-16"></p>
+      )}
       <FirstSection
         title={projects[id].title}
         about={projects[id].about}

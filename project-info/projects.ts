@@ -9,7 +9,7 @@ import vercel from "@/public/technology-logos/vercel.svg";
 //Images
 import webshop1 from "@/public/images/webshop/Webshop-1.png";
 import webshop2 from "@/public/images/webshop/Webshop-2.png";
-// import webshop3 from "@/public/images/webshop/Webshop-3.png";
+import stylistImage from "@/public/images/stylist-image.png";
 // import webshop4 from "@/public/images/webshop/Webshop-4.png";
 // import webshop5 from "@/public/images/webshop/Webshop-5.png";
 // import webshop6 from "@/public/images/webshop/Webshop-6.png";
@@ -67,8 +67,9 @@ export const projects = [
         title: "Vercel",
       },
     ],
-    images: webshopImages,
+    images: [stylistImage],
     github: "",
+    link: "https://gitfront.io/r/brunod/LdMN8gss1tHS/stylist/",
   },
   {
     id: 1,

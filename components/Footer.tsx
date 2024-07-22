@@ -58,7 +58,7 @@ const Footer = () => {
             >
               {t(`landing-contact-title`)}
             </TitleComponent>
-            <DownloadButton downloadFile="/files/bruno-delic.pdf">
+            <DownloadButton downloadFile="/files/Bruno Delić_final.pdf">
               Download CV document
             </DownloadButton>
           </div>

@@ -14,7 +14,7 @@ interface ImageSectionProps {
 
 const ImageSection = ({ images }: ImageSectionProps) => {
   return (
-    <section className="pt-24 h-full w-full md:h-[500px] md:object-contain  md:px-20">
+    <section className="pt-0 md:pt-24 h-[400px] w-full md:h-[600px] md:object-contain  md:px-20">
       <Swiper
         spaceBetween={5}
         slidesPerView={1}
@@ -27,11 +27,11 @@ const ImageSection = ({ images }: ImageSectionProps) => {
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 10,
           },
         }}
@@ -41,7 +41,7 @@ const ImageSection = ({ images }: ImageSectionProps) => {
             <Image
               src={image}
               alt="image"
-              className=" w-auto h-full my-0 object-contain "
+              className=" w-auto h-[500px] my-0 md:py-10 object-contain "
             />
           </SwiperSlide>
         ))}
