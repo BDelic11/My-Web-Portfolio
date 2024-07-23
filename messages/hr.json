@@ -29,7 +29,7 @@
     "about-project-title": "O projektu",
     "about-tech-title": "Tehnologije",
     "about-stylist": " Ovo je jedan od mojih privatnih projekata koji je još u tijeku. Sastoji se od admin i client dijela te koristi se Next.js, Typescript, .NET, C#, PostgreSQL, SCSS. Napravio sam frontend dio te sudjelovao na backendu. Detaljniji kod može biti viđen preko linka iznad.",
-    "about-webshop": "ej web"
+    "about-webshop": "Za svoj završni rad na FESB-u, smjer Računarstvo, izradio sam web aplikaciju koristeći Next.js, Prisma (server actions), TypeScript, GitHub i Tailwind CSS. Cijeli projekt sam samostalno strukturirao i dizajnirao, od baze podataka do korisničkog sučelja. Aplikacija se sastoji od admin i klijent dijela te ima sve funkcionalnosti CRUD-a. Projekt uključuje potpunu autentifikaciju i autorizaciju korisnika, registraciju novih korisnika, prijavu i sve funkcionalnosti webshopa poput košarice i produkata povezanih na bazu podataka. Administratori mogu dodavati nove proizvode koji su prikazani klijentima te pregledavati statistike prethodnih kupovina. Aplikacija je SEO friendly i podržava sve ostale funkcionalnosti tipične za web trgovine."
   },
 
   "about-page": {

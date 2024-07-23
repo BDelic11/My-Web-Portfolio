@@ -29,7 +29,7 @@
     "about-project-title": "About project",
     "about-tech-title": "Technologies",
     "about-stylist": "This is one of my private projects that is still in progress. It consists of an admin and client part and uses Next.js, TypeScript, .NET, C#, PostgreSQL, and SCSS. I developed the frontend part and also participated in the backend. More detailed code can be seen via the link above.",
-    "about-webshop": "hello web"
+    "about-webshop": "For my final project at FESB, majoring in Computer Science, I developed a web application using Next.js, Prisma (server actions), TypeScript, GitHub, and Tailwind CSS. I independently structured and designed the entire project, from the database to the user interface. The application consists of both admin and client sections and includes all CRUD functionalities. The project features complete user authentication and authorization, user registration, login, and all webshop functionalities such as a shopping cart and products connected to the database. Administrators can add new products displayed to clients and view statistics of previous purchases. The application is SEO friendly and supports all other typical web shop functionalities."
   },
 
   "about-page": {

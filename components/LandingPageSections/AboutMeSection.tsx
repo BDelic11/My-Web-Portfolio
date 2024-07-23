@@ -6,9 +6,10 @@ import { useRef } from "react";
 //Components
 import TitleComponent from "../ui/TitleComponent";
 import LayoutContainer from "../ui/Container";
+import Image from "next/image";
 
 //Images
-// import ProfileImage from "@/public/images/Slika za zivotopis.jpg";
+import ProfileImage from "@/public/images/Slika za zivotopis_final.jpg";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
@@ -37,14 +38,15 @@ const AboutMeSection = () => {
               : "transform translate-x-[20px]  "
           } transition-all duration-1000 delay-500  `}
         >
-          {/* <Image
-            src={ProfileImage}
-            alt="slika profila"
-            className="mx-auto rounded-full w-60 h-60 object-cover"
-          /> */}
-          <div className=" ">
-            <div className="mx-auto rounded-full w-60 h-60 md:w-80 md:h-80 object-cover bg-white my-10"></div>
+          <div className="mx-auto rounded-full w-full h-full my-auto  ">
+            {" "}
+            <Image
+              src={ProfileImage}
+              alt="slika profila"
+              className="rounded-full w-60 h-60 md:w-[250px] md:h-[250px] object-cover mx-auto"
+            />
           </div>
+
           <div className="flex flex-col  md:pl-40 md:justify-center md:align-top">
             <div className="text-off-white font-light my-10 texl-lg md:text-lg  ">
               <p className="">{t("landing-about-paragraph-2")}</p>
