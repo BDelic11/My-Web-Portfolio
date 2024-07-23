@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 
 //ICONS
 import croFlag from "@/public/icons/croFlag.png";
@@ -38,8 +38,12 @@ export default function LanguageChanger({ locale }: LanguageSwitchProps) {
     router.push(newUrl);
   };
 
+  // useEffect(() => {
+  //   // You can handle any side effects here if needed
+  // }, [locale]);
+
   return (
-    <>
+    <div className="pt-40">
       <select className="m-auto" value={locale} onChange={handleChange}>
         <option value="en">{t("en")}</option>
         <option value="hr">{t("hr")}</option>
@@ -55,6 +59,6 @@ export default function LanguageChanger({ locale }: LanguageSwitchProps) {
         />
         <Image width={24} height={24} src={ukFlag} alt="uk flag" className="" />
       </div> */}
-    </>
+    </div>
   );
 }

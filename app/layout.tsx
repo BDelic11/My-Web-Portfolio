@@ -15,7 +15,7 @@ import ContactButton from "@/components/ui/ContactButton";
 import Footer from "@/components/Footer";
 import notFound from "./not-found";
 import { locales } from "@/navigation";
-// import LanguageChanger from "@/components/LanguageChanger";
+import LanguageChanger from "@/components/LanguageChanger";
 const Header = dynamic(() => import("@/components/Header"), { ssr: false });
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -65,7 +65,7 @@ export default async function RootLayout({
       <body className={` ${readex.className}`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
-          {/* <LanguageChanger locale={locale} /> */}
+          <LanguageChanger locale={locale} />
           {children}
           <Footer />
           <ContactButton />
