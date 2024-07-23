@@ -9,7 +9,7 @@
     "landing-about-title-1": "Not",
     "landing-about-title-2": "your classic programmer",
     "landing-about-paragraph": "A little about me.",
-    "landing-about-paragraph-1": "I'm Bruno Delić ",
+    "landing-about-paragraph-1": "During my studies, I have acquired a broad range of skills in software and web application development. I have a particular interest in frontend development, where I use technologies like Next.js and TypeScript to create modern and responsive user interfaces.",
     "landing-about-paragraph-2": "My name is Bruno Delić and i am finishing third year of Programming and Computer Science at Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture.",
     "landing-about-button": "More about me"
   },
@@ -27,7 +27,9 @@
   },
   "project-page": {
     "about-project-title": "About project",
-    "about-tech-title": "Technologies"
+    "about-tech-title": "Technologies",
+    "about-stylist": "This is one of my private projects that is still in progress. It consists of an admin and client part and uses Next.js, TypeScript, .NET, C#, PostgreSQL, and SCSS. I developed the frontend part and also participated in the backend. More detailed code can be seen via the link above.",
+    "about-webshop": "hello web"
   },
 
   "about-page": {

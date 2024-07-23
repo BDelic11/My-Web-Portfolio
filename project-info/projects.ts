@@ -5,6 +5,7 @@ import tailwind from "@/public/technology-logos/tailwind.svg";
 import sass from "@/public/technology-logos/sass.svg";
 import github from "@/public/technology-logos/github.svg";
 import vercel from "@/public/technology-logos/vercel.svg";
+import dotnet from "@/public/technology-logos/dotnet-icon.svg";
 
 //Images
 import webshop1 from "@/public/images/webshop/Webshop-1.png";
@@ -38,8 +39,7 @@ export const projects = [
   {
     id: 0,
     title: "Stylist",
-    about:
-      "Samostalno sam dizajnirao i napravio ovaj web portfolio da mogu pokazati neke osnovne vještine, ali ujedno i izbjeći monotonost klasičnih životopisa.",
+    aboutKey: "about-stylist",
     technologies: [
       {
         id: 1,
@@ -63,19 +63,17 @@ export const projects = [
       },
       {
         id: 5,
-        image: vercel,
-        title: "Vercel",
+        image: dotnet,
+        title: ".NET",
       },
     ],
     images: [stylistImage],
-    github: "",
-    link: "https://gitfront.io/r/brunod/LdMN8gss1tHS/stylist/",
+    link: "https://gitfront.io/r/brunod/LdMN8gss1tHS/stylist",
   },
   {
     id: 1,
     title: "Web shop",
-    about:
-      "Samostalno sam dizajnirao i napravio ovaj web portfolio da mogu pokazati neke osnovne vještine, ali ujedno i izbjeći monotonost klasičnih životopisa.",
+    aboutKey: "about-webshop",
     technologies: [
       {
         id: 1,

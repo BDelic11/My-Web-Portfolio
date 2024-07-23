@@ -15,9 +15,10 @@ const ProjectPage = ({ params }: { params: { id: number } }) => {
       )}
       <FirstSection
         title={projects[id].title}
-        about={projects[id].about}
+        aboutKey={projects[id].aboutKey}
         technologies={projects[id].technologies}
         github={projects[id].github}
+        link={projects[id].link}
       />
     </main>
   );

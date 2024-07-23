@@ -27,7 +27,9 @@
   },
   "project-page": {
     "about-project-title": "O projektu",
-    "about-tech-title": "Tehnologije"
+    "about-tech-title": "Tehnologije",
+    "about-stylist": " Ovo je jedan od mojih privatnih projekata koji je još u tijeku. Sastoji se od admin i client dijela te koristi se Next.js, Typescript, .NET, C#, PostgreSQL, SCSS. Napravio sam frontend dio te sudjelovao na backendu. Detaljniji kod može biti viđen preko linka iznad.",
+    "about-webshop": "ej web"
   },
 
   "about-page": {

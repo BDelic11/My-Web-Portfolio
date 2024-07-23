@@ -12,7 +12,7 @@ import Image, { StaticImageData } from "next/image";
 
 interface FirstSectionProps {
   title: string;
-  about: string;
+  aboutKey: string;
   technologies: {
     id: number;
     image: StaticImageData;
@@ -24,7 +24,7 @@ interface FirstSectionProps {
 
 const FirstSection = ({
   title,
-  about,
+  aboutKey,
   technologies,
   github,
   link,
@@ -52,7 +52,7 @@ const FirstSection = ({
         )}
         {link && (
           <p className=" text-xs md:text-base mb-10">
-            Github:{" "}
+            See code:{" "}
             <span className=" underline text-aevum-blue text-xs md:pl-1 md:text-base">
               {" "}
               <a href={link} rel="noopener noreferrer">
@@ -65,7 +65,9 @@ const FirstSection = ({
           <SmallTitle isInView={isInView} classname="text-bg-white ">
             {t(`about-project-title`)}
           </SmallTitle>
-          <p className=" text-sm md:text-base font-light md:w-2/3 ">{about}</p>
+          <p className=" text-sm md:text-base font-light md:w-2/3 ">
+            {t(aboutKey)}
+          </p>
         </div>
         <div className=" flex flex-col pt-6">
           <SmallTitle isInView={isInView} classname="text-dark-bg mt-10 ">
