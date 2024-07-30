@@ -61,6 +61,8 @@ const Header = ({ locale }: any) => {
                 height={32}
                 priority
               />
+
+              <LanguageChanger locale={locale} />
               <MenuToggle toggle={handleToggleHamburger} />
             </div>
 

@@ -32,8 +32,6 @@ const Navbar: React.FC<NavbarProps> = ({ setIsOpen, className, locale }) => {
             {...navbarIcon}
           />
         ))}
-
-        <LanguageChanger locale={locale} />
       </ul>
     </nav>
   );

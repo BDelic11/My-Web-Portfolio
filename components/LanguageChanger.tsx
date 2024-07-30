@@ -35,9 +35,9 @@ export default function LanguageChanger({ locale }: LanguageSwitchProps) {
   };
 
   return (
-    <div className="m-auto mt-4 md:right-6 top-6">
+    <div className="m-auto md:absolute  md:right-6 top-6">
       <select
-        className="m-auto p-2 text-base rounded-lg bg-off-white hover:bg-aevum-orange hover:scale-110 hover:text-white transition-all duration-500"
+        className="m-auto p-2 text-base rounded-lg bg-off-white md:hover:bg-aevum-orange hover:scale-110 md:hover:text-white transition-all duration-500"
         value={locale}
         onChange={handleChange}
       >
