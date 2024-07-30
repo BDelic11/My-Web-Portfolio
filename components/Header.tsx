@@ -14,8 +14,9 @@ import LayoutContainer from "./ui/Container";
 import Navbar from "./Navbar";
 import { useMenuAnimation } from "@/app/hooks/useMenuAnimation";
 import { MenuToggle } from "./ui/MenutToggleButton";
+import LanguageChanger from "./LanguageChanger";
 
-const Header = () => {
+const Header = ({ locale }: any) => {
   const screenSize = useWindowSize();
   const [isMenuOpen, setisMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,21 +64,18 @@ const Header = () => {
               <MenuToggle toggle={handleToggleHamburger} />
             </div>
 
-            {isMenuOpen && <Navbar setIsOpen={setisMenuOpen} />}
+            {isMenuOpen && <Navbar locale={locale} setIsOpen={setisMenuOpen} />}
           </>
         ) : (
-          // <Image
-          //   src={logoTest1}
-          //   alt="Large Aevum Logo"
-          //   width={100}
-          //   height={40}
-          //   className="m-auto lg:scale-110 "
-          // />
-          <div className="flex justify-center  md:h-16 align-middle m-auto w-full">
-            <h2 className="m-auto w-full text-xl md:text-2xl text-off-white text-center font-thin">
-              <span className=" text-aevum-blue font-medium">CODE</span> with
-              BRUNO DELIĆ
-            </h2>
+          <div className="flex  justify-center  md:h-16 align-middle m-auto w-full">
+            <div className="flex flex-row justify-around">
+              <h2 className="m-auto w-full text-xl md:text-2xl text-off-white text-center font-thin">
+                <span className=" text-aevum-blue font-medium">CODE</span> with
+                BRUNO DELIĆ
+              </h2>
+
+              <LanguageChanger locale={locale} />
+            </div>
           </div>
         )}
       </LayoutContainer>

@@ -1,13 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
-import { ChangeEvent, useEffect, useState } from "react";
-
-//ICONS
-import croFlag from "@/public/icons/croFlag.png";
-import ukFlag from "@/public/icons/ukFlag.png";
+import { ChangeEvent } from "react";
 
 interface LanguageSwitchProps {
   locale: string; // Define the type of the 'locale' prop as a string
@@ -36,19 +31,19 @@ export default function LanguageChanger({ locale }: LanguageSwitchProps) {
 
     // Navigate to the new URL
     router.push(newUrl);
+    router.refresh();
   };
 
-  // useEffect(() => {
-  //   // You can handle any side effects here if needed
-  // }, [locale]);
-
   return (
-    <div className="pt-40">
-      <select className="m-auto" value={locale} onChange={handleChange}>
+    <div className="m-auto mt-4 md:right-6 top-6">
+      <select
+        className="m-auto p-2 text-base rounded-lg bg-off-white hover:bg-aevum-orange hover:scale-110 hover:text-white transition-all duration-500"
+        value={locale}
+        onChange={handleChange}
+      >
         <option value="en">{t("en")}</option>
         <option value="hr">{t("hr")}</option>
-      </select>
-
+      </select>{" "}
       {/* <div className="flex flex-row">
         <Image
           width={24}

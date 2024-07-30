@@ -43,7 +43,8 @@ const AboutMeSection = () => {
             <Image
               src={ProfileImage}
               alt="slika profila"
-              className="rounded-full w-60 h-60 md:w-[250px] md:h-[250px] object-cover mx-auto"
+              className="rounded-full w-60 h-60 md:w-[250px] md:h-[250px] object-cover mx-auto
+              "
             />
           </div>
 

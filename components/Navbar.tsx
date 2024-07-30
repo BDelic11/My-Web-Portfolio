@@ -1,4 +1,5 @@
 import IconLink from "./IconLink";
+import LanguageChanger from "./LanguageChanger";
 
 const navbarIcons = [
   {
@@ -15,9 +16,10 @@ const navbarIcons = [
 interface NavbarProps {
   className?: string;
   setIsOpen: (bool: boolean) => void;
+  locale: any;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ setIsOpen, className }) => {
+const Navbar: React.FC<NavbarProps> = ({ setIsOpen, className, locale }) => {
   return (
     <nav>
       <ul
@@ -30,6 +32,8 @@ const Navbar: React.FC<NavbarProps> = ({ setIsOpen, className }) => {
             {...navbarIcon}
           />
         ))}
+
+        <LanguageChanger locale={locale} />
       </ul>
     </nav>
   );

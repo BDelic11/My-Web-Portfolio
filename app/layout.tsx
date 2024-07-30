@@ -64,8 +64,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={` ${readex.className}`}>
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <LanguageChanger locale={locale} />
+          <Header locale={locale} />
           {children}
           <Footer />
           <ContactButton />
