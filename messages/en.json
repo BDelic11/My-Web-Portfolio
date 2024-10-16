@@ -1,7 +1,8 @@
 {
   "landing": {
     "largeH1-first-part": "Web Development & Design",
-    "largeH1-sec-part": "Hi, I'm Bruno Delić, a web developer, designer, and yes, a student too! I’m passionate about crafting functional, beautiful digital experiences while continuously learning and evolving. Welcome to my portfolio, where you can explore projects that reflect my journey in frontend and backend development.",
+    "largeH1-sec-part1": "Hi, I'm Bruno Delić, a web developer, designer, and yes, a student too!.",
+    "largeH1-sec-part2": "I’m passionate about crafting functional, beautiful digital experiences while continuously learning and evolving. Welcome to my portfolio, where you can explore projects that reflect my journey in frontend and backend development.",
     "cta": "Explore Projects"
   },
   "about": {

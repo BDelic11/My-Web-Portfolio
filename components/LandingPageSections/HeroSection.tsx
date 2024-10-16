@@ -40,7 +40,8 @@ const HeroSection = () => {
             </span>
           </h1>
           <h2 className=" w-full md:w-4/5 gap-4  text-gray-300 font-light text-lg md:text-lg   ">
-            {t(`largeH1-sec-part`)}{" "}
+            {t(`largeH1-sec-part1`)}{" "}
+            <span className="hidden md:block">{t(`largeH1-sec-part2`)}</span>
           </h2>
 
           <Button
