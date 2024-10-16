@@ -33,14 +33,15 @@ const HeroSection = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <h1 className="  gap-4 text-white font-extralight text-lg  md:text-xl  ">
-            <span className=" block mt-2 font-bold py-4 text-5xl md:text-6xl ">
+          <h1 className=" text-white  ">
+            <span className=" block mt-2 font-bold py-4 text-5xl md:text-7xl ">
               {" "}
               {t(`largeH1-first-part`)}
             </span>
-            <span className=" ">{t(`largeH1-sec-part`)} </span>
-            {t(`largeH1-third-part`)}
           </h1>
+          <h2 className=" w-full md:w-4/5 gap-4  text-gray-300 font-light text-lg md:text-lg   ">
+            {t(`largeH1-sec-part`)}{" "}
+          </h2>
 
           <Button
             style={{

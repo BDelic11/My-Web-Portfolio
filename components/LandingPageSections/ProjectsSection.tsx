@@ -36,12 +36,21 @@ const ProjectsSection = () => {
         </TitleComponent>
         <div className="flex flex-col md:flex-row md:justify-between  bg-white p-5 my-10 md:p-10 md:my-20  rounded-lg">
           <h3 className="hidden md:block  text-2xl text-dark-bg">
-            Neki live projekti na kojima sam sudjelovao:
+            Projekti koje sam dizajnirao i napravio:
           </h3>
           <h3 className="block md:hidden text-2xl text-dark-bg">
             Live projekti:
           </h3>
           <div className="flex flex-row mt-5 md:mt-0">
+            <Button asChild variant="link" className=" text-aevum-blue">
+              <Link
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://seawind-ebon.vercel.app/"
+              >
+                Seawind
+              </Link>
+            </Button>
             <Button asChild variant="link" className=" text-aevum-blue">
               <Link
                 rel="noopener noreferrer"

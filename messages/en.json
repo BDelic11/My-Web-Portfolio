@@ -1,16 +1,15 @@
 {
   "landing": {
-    "largeH1-first-part": "Web Development",
-    "largeH1-sec-part": "Hi there, I'm Bruno Delić and ",
-    "largeH1-third-part": "Welcome to my Portfolio",
+    "largeH1-first-part": "Web Development & Design",
+    "largeH1-sec-part": "Hi, I'm Bruno Delić, a web developer, designer, and yes, a student too! I’m passionate about crafting functional, beautiful digital experiences while continuously learning and evolving. Welcome to my portfolio, where you can explore projects that reflect my journey in frontend and backend development.",
     "cta": "Explore Projects"
   },
   "about": {
     "landing-about-title-1": "Not",
     "landing-about-title-2": "your classic programmer",
     "landing-about-paragraph": "A little about me.",
-    "landing-about-paragraph-1": "During my studies, I have acquired a broad range of skills in software and web application development. I have a particular interest in frontend development, where I use technologies like Next.js and TypeScript to create modern and responsive user interfaces.",
-    "landing-about-paragraph-2": "My name is Bruno Delić and i am finishing third year of Programming and Computer Science at Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture.",
+    "landing-about-paragraph-1": "During my studies, I have acquired a broad range of skills in software and web application development. I have a particular interest in frontend development, where I use technologies like Next.js, React and TypeScript to create modern and responsive user interfaces. That being said i don't run from new challenges and technologies.",
+    "landing-about-paragraph-2": "I am finishing third year of Programming and Computer Science at Faculty of Electrical Engineering, Mechanical Engineering and Naval Architecture.",
     "landing-about-button": "More about me"
   },
   "unique": {

@@ -1,16 +1,15 @@
 {
   "landing": {
-    "largeH1-first-part": "Web Development",
-    "largeH1-sec-part": "Bok, Ja sam Bruno Delić i ",
-    "largeH1-third-part": "Dobrodošli na moj Portfolio",
+    "largeH1-first-part": "Web Development & Design",
+    "largeH1-sec-part": "Bok, ja sam Bruno Delić, web developer, dizajner, i da, još uvijek student! Izrađujem funkcionalna i privlačna digitalna rješenja, dok istovremeno kontinuirano učim i razvijam se. Dobrodošli u moj portfolio, gdje možete istražiti projekte koji odražavaju moj frontend i backend razvoj.",
     "cta": "Istraži projekte"
   },
   "about": {
     "landing-about-title-1": "Ne",
     "landing-about-title-2": "baš klasični programer",
     "landing-about-paragraph": "Malo o meni.",
-    "landing-about-paragraph-2": "Moje ime je Bruno Delić i završavam treću godinu Računarstva na FESB-u.",
-    "landing-about-paragraph-1": "Tijekom studija stekao sam širok spektar vještina u razvoju softvera i web aplikacija. Posebno me zanima frontend razvoj, gdje koristim tehnologije poput Next.js i TypeScript za izradu modernih i responzivnih korisničkih sučelja. Uz to, vješt sam u korištenju SCSS-a za stiliziranje i održavanje čistoće koda.",
+    "landing-about-paragraph-2": "Završavam treću godinu Računarstva na FESB-u.",
+    "landing-about-paragraph-1": "Tijekom studija stekao sam širok spektar vještina u razvoju softvera i web aplikacija. Posebno me zanima frontend razvoj, gdje koristim tehnologije poput Next.js i TypeScript za izradu modernih i responzivnih korisničkih sučelja. Uz to, vješt sam u korištenju SCSS-a I Tailwinda za stiliziranje i održavanje čistoće koda.",
     "landing-about-button": "Više o meni"
   },
   "unique": {
