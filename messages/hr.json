@@ -9,8 +9,8 @@
     "landing-about-title-1": "Ne",
     "landing-about-title-2": "baš klasični programer",
     "landing-about-paragraph": "Malo o meni.",
-    "landing-about-paragraph-2": "Završavam treću godinu Računarstva na FESB-u.",
-    "landing-about-paragraph-1": "Tijekom studija stekao sam širok spektar vještina u razvoju softvera i web aplikacija. Posebno me zanima frontend razvoj, gdje koristim tehnologije poput Next.js i TypeScript za izradu modernih i responzivnih korisničkih sučelja. Uz to, vješt sam u korištenju SCSS-a I Tailwinda za stiliziranje i održavanje čistoće koda.",
+    "landing-about-paragraph-2": "Završio sam treću godinu Računarstva na FESB-u (baccalareus) te trenutno sam na diplomskom studiju Računarstva na istome.",
+    "landing-about-paragraph-1": "Tijekom studija stekao sam širok spektar vještina u razvoju softvera i web aplikacija. Posebno me zanima fullstack razvoj .Koristim tehnologije poput Next.js i TypeScript za izradu modernih i responzivnih korisničkih sučelja. Uz to, vješt sam u korištenju SCSS-a I Tailwinda za stiliziranje i održavanje čistoće koda. Dok za backend sam koristio drizzle, prismu i .NET.",
     "landing-about-button": "Više o meni"
   },
   "unique": {
@@ -34,7 +34,7 @@
 
   "about-page": {
     "about-firstSection-title": "Malo više o meni",
-    "about-firstSection-paragraph": "Kao student treće godine računarstva na FESB-u, željan sam širenja znanja i stjecanja novog iskustva, te smatram da je pravo vrijeme da se okušam u novoj okolini s novim izazovima. Rad na većim projektima u profesionalnom svijetu vidim kao ispravan korak na svom putu. Kao dugogodišnjem sportašu, rad u timu mi nije stran, a želju za natjecanjem i poboljšanjem prenosim u sve što radim. Većinu svojih projekata realizirao sam neovisno o fakultetu, u slobodno vrijeme.",
+    "about-firstSection-paragraph": "Kao student četvrte godine računarstva na FESB-u, željan sam širenja znanja i stjecanja novog iskustva, te smatram da je pravo vrijeme da se okušam u novoj okolini s novim izazovima. Rad na većim projektima u profesionalnom svijetu vidim kao ispravan korak na svom putu. Kao dugogodišnjem sportašu, rad u timu mi nije stran, a želju za natjecanjem i poboljšanjem prenosim u sve što radim. Većinu svojih projekata realizirao sam neovisno o fakultetu, u slobodno vrijeme.",
     "why-me-title-1": "Zašto",
     "why-me-title-2": "baš ja",
     "why-me-text": "Vjerujem da me nekoliko jedinstvenih vještina izdvaja od ostalih developera. Evo nekih ključnih prednosti koje me razlikuju:",
