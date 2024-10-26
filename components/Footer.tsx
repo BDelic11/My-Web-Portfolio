@@ -48,7 +48,7 @@ const Footer = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <footer id="contact" ref={ref} className="h-full bg-off-white">
+    <footer id="contact" ref={ref} className="h-full bg-off-white py-10">
       <LayoutContainer>
         <div className="flex flex-col md:flex-row md:justify-between md:align-middle md:py-20">
           <div className=" flex flex-col mb-10">
